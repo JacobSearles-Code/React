@@ -68,3 +68,38 @@ header {
     position: relative;
     left: 47%;
 }
+
+@media (max-width: 480px) {
+    .clockDiv  {
+        height: auto;
+        max-height: 60%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .clockInBtn {
+        position: relative;
+        top: 150px;
+        left: 28%;
+        width: 150px;
+    }
+
+    .clockOutBtn {
+        position: absolute;
+        width: 150px;
+        top: 400px;
+        left: 28%;
+    }
+
+    .nameInputLbl {
+        max-width: 90%;
+        position: relative;
+        left: 20px;
+    }
+
+    .clock {
+        position: relative;
+        left: 125px;
+    }
+}
