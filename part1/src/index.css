@@ -1,0 +1,70 @@
+header {
+    background-color: silver;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-content: center;
+    text-align: center;
+}
+
+.clockDiv {
+    display: flexbox;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 75%;
+    background-color: rgb(230, 230, 230);
+    border-radius: 25px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.clockTitle {
+    text-align: center;
+}  
+
+.clockInBtn {
+    width: 125px;
+    border-radius: 17px;
+    font-size: 24px;
+    position: absolute;
+    top: 175px;
+    left: 30%;
+}
+
+.clockInBtn:hover {
+    background-color: grey;
+    color: white;
+}
+
+.nameInputLbl {
+    position: relative;
+    left: 40%;
+}
+
+.clockOutBtn {
+    width: 125px;
+    border-radius: 17px;
+    font-size: 24px;
+    position: absolute;
+    top: 175px;
+    right: 30%;
+}
+
+.clockOutBtn:hover {
+    background-color: grey;
+    color: white;
+}
+
+.clock {
+    position: relative;
+    left: 47%;
+}
