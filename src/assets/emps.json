@@ -1,0 +1,9 @@
+{
+    "employees": [
+        {"name":"Darwin", "password":"Darwin11!"},
+        {"name":"Jacob", "password":"Jacob112!"},
+        {"name":"Jarrod", "password":"Jarrod221!"},
+        {"name":"Maxwell", "password":"Maxwell121!"},
+        {"name":"Colin", "password":"Colin1016!"}
+    ]
+}
