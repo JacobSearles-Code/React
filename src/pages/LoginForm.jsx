@@ -16,7 +16,6 @@ function LoginForm() {
 
         if (user) {
             navigate("/clock", { state: { user } });
-            alert("Yurt");
         } else {
             alert("Invalid Login");
         }

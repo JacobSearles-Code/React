@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function Clock() {
   const [date, setDate] = useState(new Date());
@@ -13,6 +13,7 @@ function Clock() {
 }
 
 function ClockTime() {
+  const navigate = useNavigate();
   const location = useLocation();
   const user = location.state?.user;
 
@@ -38,6 +39,7 @@ function ClockTime() {
 
   if (!user) {
     return <p>Please log in first.</p>;
+    navigate("/React/");
   }
 
   const handleClock = async (e) => {
