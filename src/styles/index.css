@@ -12,6 +12,22 @@ header {
     left: 0;
     align-content: center;
     text-align: center;
+    background-color: #fff;
+}
+
+.navBar {
+    text-align: left;
+    position: absolute;
+    top: 35px;
+    right: 50px;
+    font-size: 24px;;
+}
+
+.navItem {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
 }
 
 .clockDiv {
@@ -21,6 +37,7 @@ header {
     padding: 10px;
     width: 75%;
     background-color: rgb(230, 230, 230);
+    border: 1px solid var(--PRIMARY);
     border-radius: 25px;
     height: 250px;
     position: absolute;
@@ -59,14 +76,17 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 300px;
+    width: 350px;
     position: fixed;
     top: 100px;
-    right: 50px;
+    right: 0px;
     bottom: 0;
     padding: 20px;
     border-left: 2px solid var(--PRIMARY);
+    border-top: 2px solid var(--PRIMARY);
+    background-color: #FFFFFF;
 }
+
 
 .nameInputLbl {
     text-align: center;
@@ -85,6 +105,20 @@ header {
 input {
     padding: 8px;
     font-size: 14px;
+}
+
+.landingImg {
+    width: 1850px;
+    height: 885px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    overflow: hidden;
+}
+
+.loginDiv {
+    overflow: hidden;
 }
 
 /* Media Queries for mobile */
