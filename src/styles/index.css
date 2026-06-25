@@ -68,6 +68,9 @@ header {
     border-left: 2px solid var(--PRIMARY);
 }
 
+.nameInputLbl {
+    text-align: center;
+}
 
 .LogTitle {
     text-align: center;
@@ -113,6 +116,7 @@ input {
         max-width: 90%;
         position: relative;
         left: 20px;
+        text-align: center;
     }
 
     .clock {

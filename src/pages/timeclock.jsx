@@ -22,7 +22,7 @@ function ClockTime() {
   const fetchStatus = async (name) => {
     try {
       const res = await fetch(`https://script.google.com/macros/s/AKfycby3L65Kw9Fa0TcakeIa4oEu7uslOi3_Gh_Bsj44yJr3CETp1sD9nt_drN3f4xeKRfJ-tg/exec?name=${name}`);
-
+      
       const data = await res.json();
 
       setIsClockedIn(data.lastAction === "Clock In");
@@ -62,7 +62,6 @@ function ClockTime() {
         }
       );
 
-      // 🔄 re-sync from Google Sheets (truth source)
       await fetchStatus(user.name);
 
       alert(`${action} successful!`);
@@ -77,9 +76,9 @@ function ClockTime() {
       <h1 className="clockTitle">Time Clock</h1>
 
       <div>
-        <label className="nameInputLbl">
+        <p className="nameInputLbl">
           Welcome {user.name}!
-        </label>
+        </p>
 
         <button type="button" className="clockBtn" onClick={handleClock}>
           {isClockedIn ? "Clock Out" : "Clock In"}

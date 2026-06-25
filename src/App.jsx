@@ -16,7 +16,7 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<LoginForm />} />
-        <Route path="/clock" element={<ClockTime />} />
+        <Route path="/React/clock" element={<ClockTime />} />
       </Routes>
     </HashRouter>
   )
