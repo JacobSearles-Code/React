@@ -15,14 +15,14 @@ function LoginForm() {
         );
 
         if (user) {
-            navigate("/clock", { state: { user } });
+            navigate("/React/clock", { state: { user } });
         } else {
             alert("Invalid Login");
         }
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="outerForm" onSubmit={handleSubmit}>
             <div className="inner-form">
                 <h2 className="LogTitle">Login</h2>
                 <div className="formGroup">
